@@ -1,0 +1,16 @@
+langgraph>=0.6.5
+
+langchain>=0.3.27
+langchain-core>=0.3.74
+
+langchain-huggingface>=0.3.1
+langchain-mcp-adapters>=0.1.9
+
+huggingface_hub>=0.34.4
+transformers>=4.55.0
+
+python-dotenv>=1.1.1
+
+pydantic>=2.11.7
+
+typing_extensions>=4.14.1
