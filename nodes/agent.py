@@ -19,10 +19,16 @@ async def get_agent():
     llm = get_llm()
 
     tools = await get_tools()
+    allowed_tool_names = ["search_grocery", "search_products"]
+    filtered_tools = [t for t in tools if t.name in allowed_tool_names]
+
+    print(
+        f"Bound Tools for Agent: {[t.name for t in filtered_tools]}"
+    )  # Debug line
 
     try:
-
-        llm = llm.bind_tools(tools)
+        
+        llm = llm.bind_tools(filtered_tools)
 
     except Exception:
 
