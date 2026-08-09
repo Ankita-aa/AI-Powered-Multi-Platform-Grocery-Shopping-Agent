@@ -19,3 +19,4 @@ playwright
 langchain-mcp-adapters
 langchain
 langgraph
+langchain-groq
